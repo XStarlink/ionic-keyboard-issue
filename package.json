@@ -1,0 +1,42 @@
+{
+  "name": "app",
+  "private": true,
+  "overrides": {
+    "vue": "latest"
+  },
+  "scripts": {
+    "nuxt-upgrade": "npx nuxi upgrade --force",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "ionic:build": "nuxt generate",
+    "ionic:serve": "nuxt start",
+    "cap-sync": "npx cap sync",
+    "ios:build": "nuxt generate && npx cap sync && npx cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^2.0.4",
+    "@capacitor/cli": "5.0.1",
+    "@nuxtjs/ionic": "^0.10.0",
+    "@vue/cli-service": "5.0.8",
+    "eslint": "^8.37.0",
+    "eslint-config-custom": "*",
+    "nuxt": "^3.5.1",
+    "nuxt-icon": "^0.4.1",
+    "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "5.0.1",
+    "@capacitor/app": "5.0.1",
+    "@capacitor/core": "5.0.1",
+    "@capacitor/device": "^5.0.2",
+    "@capacitor/haptics": "^5.0.1",
+    "@capacitor/ios": "5.0.1",
+    "@capacitor/keyboard": "5.0.1",
+    "@capacitor/splash-screen": "^5.0.1",
+    "@capacitor/status-bar": "5.0.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0"
+  }
+}
